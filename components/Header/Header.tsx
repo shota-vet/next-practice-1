@@ -3,7 +3,7 @@
 import styles from "./Header.module.css";
 import { useState, useEffect } from "react";
 import Link from "next/link";
-
+// modulecssはローカルでのファイル参照なのでalias関係ないから相対パスの書き方を使っている。
 export function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isOpen, setIsOpen] = useState(false);

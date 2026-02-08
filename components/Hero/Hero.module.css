@@ -1,0 +1,64 @@
+.hero {
+  background-image: url(/img/hero.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.center {
+  text-align: center;
+  color: white;
+}
+
+.large {
+  min-height: 100vh;
+}
+
+.small {
+  height: 240px;
+}
+
+.button {
+  width: 220px;
+  height: 56px;
+
+  box-sizing: border-box; /* ←これ超重要。paddingしても幅が増えない */
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  background: transparent;
+  color: #fff;
+
+  border: 1px solid #fff;
+  border-radius: 999px;
+
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+
+  cursor: pointer;
+
+  position: relative; /* ←擬似要素の基準 */
+}
+
+.button::after {
+  content: "";
+  position: absolute;
+
+  top: 50%;
+  transform: translateY(-50%);
+
+  right: 22.8px; /* Figmaの右側の数値に合わせる */
+
+  width: 0;
+  height: 0;
+
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-left: 11px solid #fff;
+}
