@@ -1,4 +1,7 @@
 import Hero from "@/components/Hero/Hero";
+import News from "@/components/News/News";
+import Service from "@/components/Service/Service";
+
 export default function HomePage() {
   return (
     <main>
@@ -8,6 +11,9 @@ export default function HomePage() {
         buttonText="CONTACT"
         variant="large"
       />
+      <News />
+
+      <Service />
     </main>
   );
 }

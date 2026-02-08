@@ -1,0 +1,80 @@
+.news {
+  padding: 80px 0;
+  background: #ffffff;
+}
+
+.newsInner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+
+  display: grid;
+  grid-template-columns: 220px 1fr; /* 左：見出し / 右：リスト */
+  column-gap: 50px;
+  align-items: start;
+}
+
+.newsHeading {
+}
+
+.newsTitle {
+  margin: 0;
+  font-size: 56px;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  color: #2f1b6b; /* 紫っぽい */
+  line-height: 1;
+}
+
+.newsSub {
+  margin: 12px 0 0;
+  font-size: 16px;
+  font-weight: 700;
+  color: #2f1b6b;
+}
+
+.newsList {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  display: grid;
+  row-gap: 22px; /* 各行の間隔 */
+}
+
+.newsItem {
+  display: grid;
+  grid-template-columns: 110px 110px 1fr; /* 日付 / ラベル / 本文 */
+  column-gap: 1px;
+  align-items: center;
+}
+
+.newsDate {
+  font-size: 16px;
+  color: #2b2b2b;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+
+.newsLabel {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 34px;
+  padding: 0 14px;
+  border-radius: 999px;
+
+  background: #ececec;
+  color: #2b2b2b;
+  font-size: 14px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.newsText {
+  margin: 0; /* pのデフォルト余白を消す */
+  font-size: 16px;
+  color: #2b2b2b;
+  line-height: 1.7;
+}
