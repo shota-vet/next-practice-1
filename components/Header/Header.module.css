@@ -1,0 +1,197 @@
+/* ...existing code... */
+
+/* Header 基本 */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  z-index: 10;
+}
+
+.logo {
+  margin: 0;
+}
+
+.logoLink {
+  display: inline-block;
+}
+
+.logoImg {
+  display: block;
+  height: auto;
+}
+.headerLogo {
+  flex: 0 0 auto;
+}
+
+.headerNav {
+  flex: 0 0 auto; /* ←これで“伸びる”のを禁止 */
+  width: auto;
+}
+.headerInner {
+  position: relative;
+  /* desktop: ロゴと右端の要素を左右 30px に揃える */
+  height: 86px; /* Figma: 86 */
+  padding: 0 30px; /* Figma: 30 */
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.headerNav {
+  display: flex;
+  margin-left: auto;
+  justify-content: flex-end;
+}
+.globalNavList {
+  display: flex;
+  gap: 25px; /* Figma: 25 */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.globalNavItem {
+  margin: 0;
+  padding: 0;
+}
+
+.globalNavLink {
+  display: inline-block;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+/* デフォルトはハンバーガー非表示（PC） */
+.menuButton {
+  display: none;
+}
+
+/* モバイル用スタイル */
+@media screen and (max-width: 768px) {
+  /* headerInner の左右余白をモバイルでは狭くする */
+  .headerInner {
+    padding-inline: 15px; /* mobile: 15px に */
+  }
+
+  /* ナビ自体（閉じているときは非表示） */
+  .headerNav {
+    display: none;
+  }
+
+  /* オープン時オーバーレイ */
+  .headerNav.isShow {
+    position: fixed;
+    inset: 0;
+    height: 100vh;
+    background: #7633a4;
+    z-index: 100;
+    display: flex; /* 中央寄せのため flex */
+    align-items: center;
+    justify-content: center;
+    padding: 16px 20px;
+  }
+
+  /* オーバーレイ内のリスト箱（左右マージン 141px、アイテム間 20px） */
+  .headerNav.isShow .globalNavList {
+    width: auto;
+    height: 100%;
+    margin: 0 24px; /* ← 141px は大きすぎることがあったので小さめに */
+    padding: 0;
+    list-style: none;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px;
+  }
+
+  /* リンク（ボックス全幅、文字中央、太字 16px） */
+  .headerNav.isShow .globalNavLink {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-weight: 700;
+    font-size: 16px;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 8px 0;
+  }
+
+  /* デスクトップ用の余白をモバイルでリセット */
+  .headerNav.isShow .globalNavItem,
+  .headerNav.isShow .globalNavItem:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+
+  /* ハンバーガーボタン（headerInner を基準に右から 15px、垂直中央） */
+  .menuButton {
+    display: flex;
+    position: absolute; /* headerInner が relative のため基準になる */
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    z-index: 120; /* オーバーレイより前に出す */
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition:
+      transform 0.4s,
+      opacity 0.4s;
+  }
+
+  .menuButtonLine {
+    position: relative;
+    display: block;
+    width: 22px;
+    height: 2px;
+    background: #ffffff;
+    border-radius: 2px;
+    transition: all 0.25s ease;
+  }
+
+  .menuButtonLine::before,
+  .menuButtonLine::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    transition: all 0.25s ease;
+  }
+
+  .menuButtonLine::before {
+    top: -8px;
+  }
+  .menuButtonLine::after {
+    top: 8px;
+  }
+
+  /* isActive でバツに変形 */
+  .menuButton.isActive .menuButtonLine {
+    background: transparent;
+  }
+  .menuButton.isActive .menuButtonLine::before {
+    top: 0;
+    transform: rotate(45deg);
+  }
+  .menuButton.isActive .menuButtonLine::after {
+    top: 0;
+    transform: rotate(-45deg);
+  }
+}
+
+/* ...existing code... */
