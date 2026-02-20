@@ -22,7 +22,9 @@ export function Header() {
   }, []);
 
   return (
-    <header className={styles.header}>
+    <header
+      className={`${styles.header} ${isScrolled ? styles.isScrolled : ""}`}
+    >
       <div className={styles.headerInner}>
         <div className={styles.headerLogo}>
           <h1 className={styles.logo}>
