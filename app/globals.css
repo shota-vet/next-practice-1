@@ -1,6 +1,13 @@
+<<<<<<< Updated upstream
+=======
+html {
+  font-size: 100%;
+}
+
+>>>>>>> Stashed changes
 body {
   font-family:
-    "Montserrat", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans",
+    "Montserrat", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo,
     sans-serif;
   line-height: 1.8;
   color: #333;

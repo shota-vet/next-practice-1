@@ -20,7 +20,21 @@
 .small {
   height: 240px;
 }
-
+.title {
+  font-weight: bold;
+  line-height: 1;
+}
+.small .title {
+  font-size: 36px;
+}
+.large .title {
+  font-size: 72px;
+}
+.subTitle {
+  margin-top: 20px;
+  letter-spacing: 0.1em;
+  font-size: 1.5rem;
+}
 .button {
   width: 220px;
   height: 56px;
