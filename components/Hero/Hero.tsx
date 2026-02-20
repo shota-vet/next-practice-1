@@ -13,9 +13,9 @@ export default function Hero(props: Props) {
   return (
     <section className={`${styles.hero} ${sizeClass}`}>
       <div className={styles.center}>
-        <h1>{props.title}</h1>
+        <h1 className={styles.title}>{props.title}</h1>
 
-        <p>{props.subtitle}</p>
+        <p className={styles.subTitle}>{props.subtitle}</p>
         {/* 条件付きレンダリング */}
         {props.buttonText && (
           <button className={styles.button}>{props.buttonText}</button>
