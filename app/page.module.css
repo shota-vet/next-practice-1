@@ -1,0 +1,72 @@
+.works {
+  padding: 60px 0 40px;
+}
+
+.worksInner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  max-width: 1300px;
+  padding: 60px 20px;
+  display: flex;
+}
+
+.worksMedia {
+  width: 59.5238%;
+  z-index: 2;
+  margin-right: 30px;
+}
+
+.worksContent {
+  box-sizing: border-box;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  /* 縦中央（箱の中） */
+  justify-content: center;
+  /* 横中央（箱の中） */
+  flex-direction: column;
+  z-index: 1;
+}
+
+.worksHeading {
+  margin-bottom: 30px;
+  color: #391e88;
+  font-weight: bold;
+  text-align: center;
+}
+
+.worksTitle {
+  font-size: 36px;
+  letter-spacing: 0.06em;
+  line-height: 1;
+  justify-content: center;
+}
+
+.worksSubtitle {
+  display: block;
+  margin-top: 5px;
+  letter-spacing: 0.05em;
+  font-size: 13px;
+}
+
+.worksBody {
+  margin-bottom: 30px;
+}
+
+.worksText {
+  text-align: center;
+}
+
+.worksInner::after {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0px;
+  z-index: -1;
+  display: block;
+  width: 60%;
+  height: 100%;
+  content: "";
+  background-color: rgb(240, 240, 240);
+}

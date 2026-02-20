@@ -1,3 +1,43 @@
+@charset "UTF-8";
+/*!
+ * ress.css • v4.0.0
+ * MIT License
+ * github.com/filipelinhares/ress
+ */
+/* # =================================================================
+   # Global selectors
+   # ================================================================= */
+html {
+  -o-tab-size: 4;
+  tab-size: 4;
+  word-break: normal;
+  box-sizing: border-box;
+  -moz-tab-size: 4;
+  -webkit-text-size-adjust: 100%;
+  /* Prevent adjustments of font size after orientation changes in iOS */
+}
+
+*,
+::before,
+::after {
+  background-repeat: no-repeat;
+  /* Set `background-repeat: no-repeat` to all elements and pseudo elements */
+  box-sizing: inherit;
+}
+
+::before,
+::after {
+  vertical-align: inherit;
+  text-decoration: inherit;
+  /* Inherit text-decoration and vertical align to ::before and ::after pseudo elements */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  /* Reset `padding` and `margin` of all elements */
+}
+
 body {
   font-family:
     "Montserrat", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans",
