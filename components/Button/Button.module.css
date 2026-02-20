@@ -1,0 +1,44 @@
+.button {
+  text-align: center;
+}
+.moreButton {
+  width: 220px;
+  height: 56px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  /* 中の要素の盾を揃えるのにinline-flex */
+  font-size: 14px;
+  font-weight: 700;
+  color: #ffffff;
+  text-decoration: none;
+  letter-spacing: 0.08em;
+
+  background: linear-gradient(90deg, #7633a4, #250d65, #7633a4);
+  background-size: 200% 100%;
+  background-position: left;
+  transition: 0.5s ease;
+  position: relative; /* ←基準 */
+  border-radius: 999px;
+}
+.moreButton::after {
+  content: "";
+  position: absolute;
+  right: 21px;
+
+  top: 50%;
+  transform: translateY(-50%);
+  /* 要素の上端が50%の高さに来るので縦半分分ずれる。なのでtranslateY(-50%)で上に要素自身の50％分動かす */
+
+  width: 0;
+  height: 0;
+  border-left: 6px solid #fff;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  /* 三角は「向けたい方向の反対側のborder」を塗る */
+}
+/* hover */
+.moreButton:hover {
+  background-position: right;
+}

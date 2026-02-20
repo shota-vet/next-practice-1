@@ -1,6 +1,7 @@
 import Hero from "@/components/Hero/Hero";
 import News from "@/components/News/News";
 import Service from "@/components/Service/Service";
+import Button from "@/components/Button/Button";
 
 export default function HomePage() {
   return (
@@ -14,6 +15,7 @@ export default function HomePage() {
       <News />
 
       <Service />
+      <Button />
     </main>
   );
 }
