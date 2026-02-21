@@ -1,0 +1,51 @@
+.companyGoal {
+  text-align: center;
+  margin: 0 70px;
+  background-image: url(/img/bg-circle.png);
+}
+.companyGoalInner {
+  padding: 100px 0px;
+  margin-bottom: 30px;
+  background-image: url(/img/bg-face.png);
+  background-repeat: no-repeat;
+  background-position: right top 100px;
+  background-size: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.companyGoalHeading {
+  color: var(--color-text-heading);
+}
+
+.companyGoalTitle {
+  font-size: 2.25rem;
+  line-height: 43.2px;
+  margin: 0 0 5px;
+}
+
+.companyGoalSubTitle {
+  font-size: 0.81rem;
+  font-weight: Bold;
+  margin: 0;
+}
+
+.messageHeading {
+  margin-bottom: 40px;
+}
+
+.message {
+  display: inline;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.4;
+  background: linear-gradient(transparent 72%, #f4e66d 72%);
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
+.text {
+  margin-bottom: 30px;
+}
