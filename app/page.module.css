@@ -1,5 +1,6 @@
 .works {
   padding: 60px 0 40px;
+  margin: 0 70px;
 }
 
 .worksInner {
@@ -7,7 +8,8 @@
   display: flex;
   align-items: center;
   max-width: 1300px;
-  padding: 60px 20px;
+  margin: 0 auto;
+  padding: 60px 0;
   display: flex;
 }
 
@@ -31,7 +33,7 @@
 
 .worksHeading {
   margin-bottom: 30px;
-  color: #391e88;
+  color: var(--color-text-heading);
   font-weight: bold;
   text-align: center;
 }

@@ -4,6 +4,7 @@ import Service from "@/components/Service/Service";
 import Button from "@/components/Button/Button";
 import styles from "./page.module.css";
 import WorksSlider from "@/components/WorksSlider/WorksSlider";
+import CompanyGoal from "@/components/CompanyGoal/CompanyGoal";
 
 export default function HomePage() {
   return (
@@ -48,6 +49,8 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      <CompanyGoal headingTitle="COMPANY" headingSubTitle="私たちについて" />
     </main>
   );
 }

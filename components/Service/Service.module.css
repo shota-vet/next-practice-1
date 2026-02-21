@@ -6,10 +6,21 @@
 .serviceHeading {
   text-align: center;
   margin: 0;
-  font-size: 36px;
-  font-weight: bold;
-  letter-spacing: 0.06em;
-  color: #391e88;
-  line-height: 1;
+  color: var(--color-text-heading);
   justify-content: center;
+}
+
+.serviceTitle {
+  margin: 0;
+  font-size: 2.25rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  line-height: 1;
+}
+
+.serviceSub {
+  margin: 5px 0 0;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
 }

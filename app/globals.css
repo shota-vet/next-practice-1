@@ -4,7 +4,9 @@
    Reset (ress.css base)
    ブラウザ差を消す
    ========================================================= */
-
+:root {
+  --color-text-heading: #391e88;
+}
 html {
   box-sizing: border-box;
   tab-size: 4;
@@ -28,11 +30,6 @@ html {
   vertical-align: inherit;
   text-decoration: inherit;
 }
-
-/* =========================================================
-   Base typography
-   サイトの基本デザイン
-   ========================================================= */
 
 html {
   font-size: 100%; /* rem計算の基準(16px) */
