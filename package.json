@@ -11,14 +11,9 @@
   "dependencies": {
     "next": "16.1.6",
     "react": "19.2.3",
-<<<<<<< Updated upstream
-    "react-dom": "19.2.3"
-=======
     "react-dom": "19.2.3",
-    "res": "^0.4.0",
-    "ress": "^5.0.2",
-    "swiper": "^12.1.2"
->>>>>>> Stashed changes
+    "swiper": "^12.1.2",
+    "ress": "^5.0.2"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",

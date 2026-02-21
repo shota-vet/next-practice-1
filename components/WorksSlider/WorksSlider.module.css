@@ -1,0 +1,29 @@
+.sliderWrap {
+  width: 100%;
+}
+.sliderWrap :global(.swiper) {
+  position: relative;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ここからSwiperのボタンに当てる（:globalが必須） */
+.sliderWrap :global(.swiper-button-prev),
+.sliderWrap :global(.swiper-button-next) {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+/* Swiperはnavigationに対してクラスを自動でglobalで振っているがコンポーネント内だとcss moduleが付与する固有クラスを付与するので効かなくなってしまう、なのでこのクラス名は変更しないでという目的で:global()を書いている*/
+/* 左右の位置（スライド端に寄せる） */
+.sliderWrap :global(.swiper-button-prev) {
+  left: 12px;
+}
+
+.sliderWrap :global(.swiper-button-next) {
+  right: 12px;
+}

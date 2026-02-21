@@ -1,17 +1,50 @@
-<<<<<<< Updated upstream
-=======
+@charset "UTF-8";
+
+/* =========================================================
+   Reset (ress.css base)
+   ブラウザ差を消す
+   ========================================================= */
+
 html {
-  font-size: 100%;
+  box-sizing: border-box;
+  tab-size: 4;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  -webkit-text-size-adjust: 100%;
+  word-break: normal;
 }
 
->>>>>>> Stashed changes
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  background-repeat: no-repeat;
+}
+
+*::before,
+*::after {
+  vertical-align: inherit;
+  text-decoration: inherit;
+}
+
+/* =========================================================
+   Base typography
+   サイトの基本デザイン
+   ========================================================= */
+
+html {
+  font-size: 100%; /* rem計算の基準(16px) */
+}
+
 body {
   font-family:
     "Montserrat", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo,
     sans-serif;
+
+  font-size: 0.9375rem; /* 15px */
   line-height: 1.8;
-  color: #333;
   letter-spacing: 0.05em;
-  font-size: 15px;
-  font-size: 0.9375rem;
+  color: #333;
 }
