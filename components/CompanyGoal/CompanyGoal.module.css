@@ -8,8 +8,7 @@
   margin-bottom: 30px;
   background-image: url(/img/bg-face.png);
   background-repeat: no-repeat;
-  background-position: right top 100px;
-  background-size: auto;
+  background-size: content-box;
   display: flex;
   flex-direction: column;
   justify-content: center;
