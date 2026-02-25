@@ -5,6 +5,8 @@ import Button from "@/components/Button/Button";
 import styles from "./page.module.css";
 import WorksSlider from "@/components/WorksSlider/WorksSlider";
 import CompanyGoal from "@/components/CompanyGoal/CompanyGoal";
+import Recruit from "@/components/Recruit/Recruit";
+
 import Contact from "@/components/Contact/Contact";
 export default function HomePage() {
   return (
@@ -51,6 +53,7 @@ export default function HomePage() {
       </section>
 
       <CompanyGoal headingTitle="COMPANY" headingSubTitle="私たちについて" />
+      <Recruit />
       <Contact />
     </main>
   );
