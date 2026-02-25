@@ -7,6 +7,7 @@ import WorksSlider from "@/components/WorksSlider/WorksSlider";
 import CompanyGoal from "@/components/CompanyGoal/CompanyGoal";
 import Recruit from "@/components/Recruit/Recruit";
 
+import Contact from "@/components/Contact/Contact";
 export default function HomePage() {
   return (
     <main>
@@ -53,6 +54,7 @@ export default function HomePage() {
 
       <CompanyGoal headingTitle="COMPANY" headingSubTitle="私たちについて" />
       <Recruit />
+      <Contact />
     </main>
   );
 }
