@@ -52,7 +52,11 @@ export default function HomePage() {
         </div>
       </section>
 
-      <CompanyGoal headingTitle="COMPANY" headingSubTitle="私たちについて" />
+      <CompanyGoal
+        headingTitle="COMPANY"
+        headingSubTitle="私たちについて"
+        className={styles.mx70}
+      />
       <Recruit />
       <Contact />
     </main>

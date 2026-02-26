@@ -72,3 +72,7 @@
   content: "";
   background-color: rgb(240, 240, 240);
 }
+
+.mx70 {
+  margin: 0 70px;
+}

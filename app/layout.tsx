@@ -1,6 +1,7 @@
 import "ress/ress.css";
 import "./globals.css";
 import { Header } from "@/components/Header/Header";
+import { Footer } from "@/components/Footer/Footer";
 
 export default function RootLayout({
   children,
@@ -9,9 +10,16 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ja">
+      <head>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+          rel="stylesheet"
+        />
+      </head>
       <body>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );

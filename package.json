@@ -9,11 +9,12 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "classnames": "^2.5.1",
     "next": "16.1.6",
     "react": "19.2.3",
     "react-dom": "19.2.3",
-    "swiper": "^12.1.2",
-    "ress": "^5.0.2"
+    "ress": "^5.0.2",
+    "swiper": "^12.1.2"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",

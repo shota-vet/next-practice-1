@@ -1,13 +1,18 @@
 import styles from "./CompanyGoal.module.css";
 import Button from "../Button/Button";
-
+import classNames from "classnames";
 type Props = {
   headingTitle: string;
-  headingSubTitle: string;
+  headingSubTitle?: string;
+  className?: string;
 };
-export default function CompanyGoal({ headingTitle, headingSubTitle }: Props) {
+export default function CompanyGoal({
+  headingTitle,
+  headingSubTitle,
+  className,
+}: Props) {
   return (
-    <section className={styles.companyGoal}>
+    <section className={classNames(styles.companyGoal, className)}>
       <div className={styles.companyGoalInner}>
         <div className={styles.companyGoalHeading}>
           <h2 className={styles.companyGoalTitle}>{headingTitle}</h2>

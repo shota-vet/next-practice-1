@@ -1,0 +1,27 @@
+.footer {
+  background-color: #120e19;
+  padding: 60px 30px;
+  text-align: center;
+}
+
+.footerNavList {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+
+  list-style: none;
+}
+
+.footerNavLink {
+  font-size: 0.75em;
+  letter-spacing: 0.1em;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.footerCopyRight {
+  color: #a798b7;
+  font-size: 0.625em;
+  margin-top: 30px;
+}
